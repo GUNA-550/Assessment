@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body style="background-color: blanchedalmond; text-align: center;">
+    <div class="form-group">
+    <label for="">Name:</label>
+    <input type="text" id="limit"><br><br>
+    <label for="">EmailAddress:</label>
+    <input type="text" id="limits" ><br><br>
+    <input type="submit" id="submit">
+</div>
+<script>
+  var name =$("#limit").val();
+  var email =$("#limits").val();
+
+    $("#limit").on('input', function() {
+    if($(this).val().length >=20) {
+        alert(' allow only 20 characters');
+    }
+})
+$("#limits").on('input', function(){
+    if($(this).val().length >=35) {
+        alert('allow only 35 characters ');
+        }
+
+})
+$("#submit").click('input', function(){
+ if((name != null || name!= "" )&& (email !=null || email !=""))
+ {
+  alert("success");
+ }
+  
+})
+
+</script>
+</body>
+</html>
