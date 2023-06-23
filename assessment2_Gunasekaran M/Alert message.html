@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert message</title>
+    
+</head>
+<body style="text-align: center;">
+    <form name="myform"  onsubmit="return validateform()" > 
+        <label for="name">Name:</label> 
+        <input type="text" name="name"><br/>    
+        <input type="submit" value="Submit">  
+        </form>  
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;   
+        if (name==null || name==""){  
+          alert("Error"); 
+        }else {
+          alert("success");  
+           
+          }  
+        }  
+        </script>   
+        
+    
+</body>
+</html>
