@@ -1,0 +1,18 @@
+div{
+    text-align: center;
+}
+#good{
+    background-color: yellow;
+   padding:10px 10px;
+    border-radius: 10px 10px;
+}
+#addbutton
+{
+    background-color: wheat;
+    padding:10px 10px;
+     border-radius: 10px;
+ }
+body
+{
+    background-color: aquamarine;
+}
