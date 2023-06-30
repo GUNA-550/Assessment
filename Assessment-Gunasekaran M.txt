@@ -1,0 +1,64 @@
+1)Interface different from an Abstract Class?
+      * The Abstract class and Interface both are used to have abstraction. 
+      *In interface automatically assume public access modifier and abstract keyword in method. andInterface keyword using interface declaration.
+      * Interface achieves fully abstraction.
+      * Interface support multiple inheritance.
+
+2)Constructor and object
+   
+   CONSTRUCTOR-A constructor is a special method of the class which gets automatically invoked whenever an instance of the class is created.
+A constructor contains the collection of instructions that are executed at the time of Object creation.
+constructor has two types default constructor and parameterized constructor.
+   
+   OBJECT- Object is a real world entity.object is an entity that has state and behavior.
+It is also called instance of class.Object is a runtime entity, it is created at runtime.
+
+
+3)Virtual keyword-
+  The virtual keyword is used to modify a method, property and allow for it to be overridden in a derived class. 
+Derived class function is overriding a function with the same parameters and same name in the base class and we should use virtual keyword in the base class.
+ex:This method can be overridden by any class that inherits it.
+ 
+override Keyword- 
+   This used to indicate that a derived class function is overriding a function with the same parameters and same name in the base class.
+In cases where it is not find virtual function with the same specifications in the base class and it shows a compile time error.
+
+
+4)
+  The abstract class cannot be declared as sealed. 
+  A sealed class cannot be used as a base class.  
+  sealed classes can't inherit.
+ 
+
+5)
+
+using System;
+public class convert // Encapsulation( data member and member function  in one class)
+{
+    double celsius = Convert.ToDouble(Console.ReadLine()); // get input value
+    public void CCK() // convert celsius to kelvin method
+    {
+        double kelvin; //variable  declaration
+        kelvin = celsius + 273; //formula
+        Console.WriteLine("convert celsius to kelvin"); //print line
+         Console.WriteLine(kelvin); //print output using console
+    }
+    public void CCF() //convert celsius to fahrenheit method 
+    {
+        double fahrenheit; //vaiable declaration
+        fahrenheit= celsius*18/10+32; //formula
+        Console.WriteLine("\n convert celsius to fahrenheit");
+        //print line
+         Console.WriteLine(fahrenheit);//print output using console
+    }
+}
+public class convertion //class
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Celsius value");
+        convert p=new convert();// create the object
+        p.CCK(); // call the function
+        p.CCF(); // call the function
+    }
+}
